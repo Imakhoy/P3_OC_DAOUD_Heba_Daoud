@@ -1,0 +1,36 @@
+.loading-page{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        i{
+        font-size: 4rem;
+            color: $colour-primary;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            animation: loader 1.85s linear infinite;
+            margin: 0 0 0 -25px;
+    }
+}
+.loading-wrapper {
+    z-index: 1;
+    animation: home 0s 3s both;
+}
+@keyframes home {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+  
+    visibility:hidden; 
+    transform: rotate(360deg);
+  }
+}
